@@ -40,4 +40,8 @@ public class Item {
     @OneToMany(mappedBy = "item")
     @JsonManagedReference
     private List<CategoryOfItem> listOfCategories;
+
+    @OneToMany(mappedBy = "item")
+    @JsonManagedReference
+    private List<ImageOfItem> listOfImgs;
 }
